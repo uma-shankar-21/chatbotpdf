@@ -2,6 +2,9 @@
 
 This project demonstrates how to build a chatbot that can interact with multiple PDF documents using the LLaMA3 model via the Groq API, powered by LangChain. It supports uploading, indexing, and querying PDFs through a conversational interface built with Streamlit.
 
+Link to Access: https://chatbotpdff.streamlit.app/
+For working sample check the PPT attached for reference
+
 ## 🔍 Features
 
 - Upload and interact with **multiple PDF files**
@@ -20,7 +23,7 @@ This project demonstrates how to build a chatbot that can interact with multiple
 - **PyPDF2** for reading PDF content
 
 ## 📦 Installation
-
+** After Cloning please create your GROQ API KEY from groq cloud and check the result **
 ```bash
 git clone https://github.com/yourusername/pdf-chatbot-llama3.git
 cd pdf-chatbot-llama3
