@@ -7,9 +7,12 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from langchain.embeddings import SentenceTransformerEmbeddings
 from langchain_groq import ChatGroq
-os.environ["GROQ_API_KEY"]="YOUR GROQ API KEY"
-model = ChatGroq(groq_api_key="YOUR GROQ API KEY",
-                model="meta-llama/llama-4-scout-17b-16e-instruct", temperature=0.7)
+import os
+groq_api_key = os.getenv("GROQ_API_KEY")
+llm = ChatGroq(
+    groq_api_key=groq_api_key,
+    model="meta-llama/llama-4-scout-17b-16e-instruct", temperature=0.7
+)
 
 def get_pdf_text(pdf_docs):
     text=""
