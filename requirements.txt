@@ -6,3 +6,5 @@ faiss-cpu
 langchain-groq
 sentence-transformers
 langchain-community
+torch>=2.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.46.2 # not directly required, pinned by Snyk to avoid a vulnerability
